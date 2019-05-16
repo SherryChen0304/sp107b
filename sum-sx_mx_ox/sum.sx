@@ -1,0 +1,120 @@
+// =========== iFile: ../test/m/sum.mx ==============
+@main   //00     00C
+        //111a c1c2...c6 d1..d3 j1..j3  c指令
+        //1110   101010  000    111 
+        //  E       A     8       7
+0;JMP    //01
+  
+(msg) "sum=", 0    //02
+                   //查詢ASCIIcode 0073 00xx 00xx 003D 0000
+(lineEnd) 13, 10, 13, 10, 0     // 16進位制： \n=0d(13) 換行   \r=0a(10) 歸位  
+                                //07
+                                //0A00 
+  
+(main)  //0C=12
+// .setc t1 = 0  
+@0      //0C
+D=A     //0D
+@t1     //0E
+M=D     //0F
+// .set  s = t1  
+@t1     //10
+D=M     //11
+@s      //12
+M=D     //13
+// .setc t1 = 1  
+@1
+D=A
+@t1
+M=D
+// .set  i = t1  
+@t1
+D=M
+@i
+M=D
+(L1)  
+// .set  t2 = i  
+@i
+D=M
+@t2
+M=D
+// .setc t3 = 10  
+@10
+D=A
+@t3
+M=D
+// .op   t4 = t2 <= t3  
+@t2
+D=M
+@t3
+D=D<=M
+@t4
+M=D
+// .ifnot t4 goto L2  
+@t4
+D=M
+@L2
+D;JEQ
+// .set  t1 = s  
+@s
+D=M
+@t1
+M=D
+// .set  t2 = i  
+@i
+D=M
+@t2
+M=D
+// .op   t3 = t1 + t2  
+@t1
+D=M
+@t2
+D=D+M
+@t3
+M=D
+// .set  s = t3  
+@t3
+D=M
+@s
+M=D
+// .set  t1 = i  
+@i
+D=M
+@t1
+M=D
+// .setc t2 = 1  
+@1
+D=A
+@t2
+M=D
+// .op   t3 = t1 + t2  
+@t1
+D=M
+@t2
+D=D+M
+@t3
+M=D
+// .set  i = t3  
+@t3
+D=M
+@i
+M=D
+// .goto L1  
+@L1
+0;JMP
+(L2)  
+// .puts msg  
+@msg
+D=A
+@3
+swi
+// .puti s  
+@s
+D=M
+@0
+swi
+// .puts lineEnd  
+@lineEnd
+D=A
+@3
+swi
