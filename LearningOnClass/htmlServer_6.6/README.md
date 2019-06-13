@@ -1,6 +1,6 @@
-# 課堂實作
+# 一、課堂實作
 
-## htmlServer
+## 1. htmlServer
 
 ```
 $ gcc htmlServer.c -o htmlServer
@@ -29,7 +29,7 @@ if (strstr(path, ".htm") != NULL) {
     }
 ```
 
-## helloWebServer.c
+## 2. helloWebServer.c
 
 ```
 $ gcc helloWebServer.c -o helloWebServer
@@ -39,7 +39,7 @@ $ ./helloWebServer
 
 網頁上顯示 hello world
 
-## headPrintServer.c
+## 3. headPrintServer.c
 
 ```
 $ gcc headPrintServer.c -o headPrintServer
@@ -51,7 +51,7 @@ $ ./headPrintServer
 ![實作結果](picture/headPrintbServer.png)
 
 
-# 參考資料
+# 二、參考資料
 
 ## JS Linux
 
