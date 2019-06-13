@@ -8,15 +8,16 @@ $ ./htmlServer
 ```
 然後訪問 http://localhost:8080/index.html 可以看到網頁，任意點選連結訪問其他頁面。
 
-* [實作結果](/picture/htmlServer.png)
+![實作結果](picture/htmlServer.png)
 
-    * 程式段：http標頭
-    ```
-    sprintf(response, "HTTP/1.1 200 OK\r\n"
-                        "Content-Type: text/html; charset=UTF-8\r\n"
-                        "Content-Length: %d\r\n\r\n%s", len, text);   // http的標頭，兩組\r\n，第四行是空行。
-    write(client_fd, response, strlen(response));
-    ```
+* 程式段：http標頭
+
+```
+sprintf(response, "HTTP/1.1 200 OK\r\n"
+                    "Content-Type: text/html; charset=UTF-8\r\n"
+                    "Content-Length: %d\r\n\r\n%s", len, text);   // http的標頭，兩組\r\n，第四行是空行。
+write(client_fd, response, strlen(response));
+```
 
 ## helloWebServer.c
 
