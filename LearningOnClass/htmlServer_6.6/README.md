@@ -8,7 +8,7 @@ $ ./htmlServer
 ```
 然後訪問 http://localhost:8080/index.html 可以看到網頁，任意點選連結訪問其他頁面。
 
-* [實作結果](/picture/htmlServer.png)
+* [實作結果](htmlServer_6.6/picture/htmlServer.png)
 
     * 程式段：http標頭
     ```
