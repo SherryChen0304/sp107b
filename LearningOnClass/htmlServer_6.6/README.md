@@ -8,7 +8,7 @@ $ ./htmlServer
 ```
 然後訪問 http://localhost:8080/index.html 可以看到網頁，任意點選連結訪問其他頁面。
 
-* [實作結果](htmlServer.png)
+* [實作結果](/picture/htmlServer.png)
 
     * 程式段：http標頭
     ```
@@ -24,7 +24,7 @@ $ ./htmlServer
 $ gcc helloWebServer.c -o helloWebServer
 $ ./helloWebServer
 ```
-* [實作結果](helloWebServer.png)
+* [實作結果](/picture/helloWebServer.png)
 
 網頁上顯示 hello world
 
@@ -37,7 +37,7 @@ $ ./headPrintServer
 
 網頁上顯示 hello world，也會印出 http header 方便觀察。
 
-* [實作結果](headPrintbServer.png)
+* [實作結果](/picture/headPrintbServer.png)
 
 
 # 參考資料
