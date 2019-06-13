@@ -48,7 +48,7 @@ $ ./headPrintServer
 
 網頁上顯示 hello world，也會印出 http header 方便觀察。
 
-![實作結果](picture/headPrintbServer.png)
+![實作結果](picture/headPrintServer.png)
 
 
 # 二、參考資料
