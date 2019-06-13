@@ -62,4 +62,4 @@ $ ./headPrintServer
 
 * [JS/Linux (x86)](https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/buildroot-x86.cfg)
 
-* [HelloWebServer]修改來源 --- http://rosettacode.org/wiki/Hello_world/Web_server#C
+* HelloWebServer修改來源 --- http://rosettacode.org/wiki/Hello_world/Web_server#C
