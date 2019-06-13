@@ -35,7 +35,7 @@ if (strstr(path, ".htm") != NULL) {
 $ gcc helloWebServer.c -o helloWebServer
 $ ./helloWebServer
 ```
-* [實作結果](picture/helloWebServer.png)
+![實作結果](picture/helloWebServer.png)
 
 網頁上顯示 hello world
 
@@ -48,7 +48,7 @@ $ ./headPrintServer
 
 網頁上顯示 hello world，也會印出 http header 方便觀察。
 
-* [實作結果](picture/headPrintbServer.png)
+![實作結果](picture/headPrintbServer.png)
 
 
 # 參考資料
