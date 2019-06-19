@@ -35,6 +35,7 @@ int main(int argc, char *argv[]) {
 }
 
 ```
+
 ### 實作結果
 
 ![實作結果](picture/crawSeq.png)
@@ -63,6 +64,7 @@ int main() {
   return 0;    
 }
 ```
+
 ### 實作結果
 
 ![實作結果](picture/crawThread.png)
