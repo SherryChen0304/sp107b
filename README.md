@@ -13,13 +13,13 @@
 
 ## 大綱
 
-* 上課內容： [00-LearningOnClass]()
+* 上課內容： [00-LearningOnClass](/00-LearningOnClass)
 
-* 筆記： [01-Note]() 
+* 筆記： [01-Note](/01-Note) 
     
-* 回家作業： [02-HomeWork]()
+* 回家作業： [02-HomeWork](/02-HomeWork)
 
-* 期末專案： [03-myProject]() 
+* 期末專案： [03-myProject](/03-myProject) 
     
     * 編譯器： [compiler](/03-myProject/compiler)
 
