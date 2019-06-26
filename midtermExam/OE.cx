@@ -1,0 +1,6 @@
+a=4;
+if(a % 2 == 0) {
+    asm("Even");
+} else {
+    asm("Odd");
+}
